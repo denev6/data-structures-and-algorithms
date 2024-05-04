@@ -1,0 +1,4 @@
+- `sortColors`: Selection Sort
+- `heightChecker`: Bubble Sort
+- `insertionSortList`: Insertion Sort
+- `sortArray`: Heap Sort
