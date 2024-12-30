@@ -1,27 +1,27 @@
 // Design a HashMap without using any built-in hash table libraries.
 
 type MyHashMap struct {
-    bucket []int
+	bucket []int
 }
 
 func Constructor() MyHashMap {
-    b := make([]int, 1000001)
-    for i, _ := range b {
-        b[i] = -1
-    }
-    return MyHashMap{bucket: b}
+	b := make([]int, 1000001)
+	for i, _ := range b {
+		b[i] = -1
+	}
+	return MyHashMap{bucket: b}
 }
 
-func (this *MyHashMap) Put(key int, value int)  {
-    this.bucket[key] = value
+func (this *MyHashMap) Put(key int, value int) {
+	this.bucket[key] = value
 }
 
 func (this *MyHashMap) Get(key int) int {
-    return this.bucket[key]
+	return this.bucket[key]
 }
 
-func (this *MyHashMap) Remove(key int)  {
-    this.bucket[key] = -1
+func (this *MyHashMap) Remove(key int) {
+	this.bucket[key] = -1
 }
 
 /**
