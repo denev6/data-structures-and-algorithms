@@ -1,6 +1,6 @@
+desktop.ini
 /*.py
 /*.go
-desktop.ini
+__pycache__
 .vs
 .vscode
-__pycache__
